@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*--start the navbsr--*/
+#navbar{
+    background-color: #f4511e;
+    margin-top: -20px;
+}
+#navbar ul li a{
+    font-family: sans-serif;
+    color: #fff;
+    padding: 30px 5px 18px ;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+#navbar ul li a:hover{
+    background-color: #fff;
+    color: #f4511e;
+}
+#navbar ul li a:active{
+    background-color: #fff;
+    color: #f4511e;
+}
+#navbar ul li a:visited{
+    background-color: #fff;
+    color: #f4511e;
+}
+/*--end the navbar--*/
+
+/*--start the header--*/
+#header{
+    background-color: #f4511e;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 60px;
+}
+#header h1{
+    font-size: 75px;
+}
+#header p{
+    font-size: 30px;
+}
+/*--end the header--*/
+
+/*--start the about--*/
+
+/*--end the about--*/
