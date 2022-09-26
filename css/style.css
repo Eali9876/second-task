@@ -2,10 +2,15 @@
     padding: 0;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+  }
 /*--start the navbsr--*/
 #navbar{
     background-color: #f4511e;
     margin-top: -20px;
+    z-index: 9;
+   padding-bottom: 0px;
 }
 #navbar ul li a{
     font-family: sans-serif;
@@ -18,21 +23,20 @@
     background-color: #fff;
     color: #f4511e;
 }
-#navbar ul li a:active{
+/* #navbar ul li a:active{
     background-color: #fff;
     color: #f4511e;
 }
 #navbar ul li a:visited{
     background-color: #fff;
     color: #f4511e;
-}
+} */
 /*--end the navbar--*/
 
 /*--start the header--*/
 #header{
     background-color: #f4511e;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 60px;
 }
 #header h1{
     font-size: 75px;
@@ -43,5 +47,174 @@
 /*--end the header--*/
 
 /*--start the about--*/
-
+#about{
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+#about .row h2{
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #303030;
+        font-weight: 600;
+        margin-bottom: 30px;
+}
+#about .row h4{
+    font-size: 19px;
+    line-height: 28px;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+}
+#about .row button:hover{
+background-color: rgb(235, 232, 232);
+}
+#about-value{
+    padding: 100px 50px 80px 50px;
+}
+#about-value  h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#about-value h4{
+font-size: 19px;
+line-height: 28px;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
 /*--end the about--*/
+
+/*--start the services--*/
+#services{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#services  h2{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#services h4{
+font-size: 19px;
+line-height: 28px;
+  color: #696565;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+#services i{
+    color: #f4511e;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+/*--end the services--*/
+
+
+/*--start the portifolio--*/
+#portfolio{
+   padding-top: 80px;
+   padding-bottom: 80px;
+   margin-bottom: 140px;
+}
+#portfolio  h2,.h2{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+#portfolio h4{
+font-size: 19px;
+line-height: 28px;
+  color: #696565;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+#portfolio  .btn-slide button{
+    border: solid 1px #f4511e;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+#portfolio .btn-slide .active{
+    background-color: #f4511e;
+}
+#portfolio .fa-chevron-left,.fa-chevron-right{
+    display: inline-block;
+    font-size: 45px;
+    color: #f4511e;
+    margin-top: -80px;
+}
+/*--end the portfolio--*/
+
+/*--start the pricing--*/
+#pricing  h2{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+#pricing h4{
+font-size: 19px;
+line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+#pricing  .slideanim  .col-sm-4 .panel  .panel-heading{
+    background-color: #f4511e;
+    color: #fff;
+    padding: 10px 0px;
+}
+#pricing .slideanim .col-sm-4 .panel{
+    border: 2px solid #f4511e;
+    width: 95%;
+    margin: auto;
+    padding-bottom: 15px;
+}
+#pricing .slideanim .col-sm-4 .panel .panel-footer button{
+background-color: #f4511e;
+color: #fff;
+}
+#pricing .slideanim .col-sm-4 .panel .panel-footer button:hover{
+background-color:#fff;
+color: #f4511e;
+border: 2px solid #f4511e;
+}
+#pricing .slideanim .col-sm-4 .panel:hover{
+    box-shadow:3px 3px 7px #b8aeae81,-3px -3px 7px #b8aeae81;
+}
+#pricing{
+    margin-bottom: 90px;
+}
+/*--end the pricing--*/
+
+/*--start the contact--*/
+#contact  h2{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+}
+#contact .submit{
+    background-color: #fff;
+    border: 1px solid rgba(112, 128, 144, 0.829);
+    float: right;
+}
+#contact .submit:hover{
+    background-color: rgba(189, 197, 206, 0.418);
+}
+/*--end the contact--*/
+
+/*--start the footer--*/
+#footer .fa-chevron-up{
+    font-size: 26px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+/*--end the footer--*/
+

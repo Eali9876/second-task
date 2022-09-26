@@ -10,6 +10,12 @@
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+   <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> -->
+  <!-- animate -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +24,7 @@
 <body>
   <!-- start the navbar -->
 
-  <nav class="navbar navbar-expand-lg position-fixed w-100" id="navbar">
+  <nav class="navbar navbar-expand-lg position-fixed w-100 " id="navbar">
     <div class="container-fluid">
       <a class="navbar-brand ms-5 text-light logo" href="#">L o g o</a>
       <button class="navbar-toggler btn bg-info text-secondary  border-1"  data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,19 +33,19 @@
       <div class="collapse navbar-collapse justify-content-end me-5" id="navbarTogglerDemo02">
         <ul class="navbar-nav  mb-2 mb-lg-0 justify-content-end">
           <li class="nav-item ">
-            <a class="nav-link d-inline-block  me-4 " href="#">ABOUT</a>
+            <a class="nav-link d-inline-block  me-4" href="#about">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link d-inline-block  me-4" href="#">SERVICES</a>
+            <a class="nav-link d-inline-block  me-4" href="#services">SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link d-inline-block  me-4" href="#">PORTFOLIO</a>
+            <a class="nav-link d-inline-block  me-4" href="#portfolio">PORTFOLIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link d-inline-block  me-4" href="#">PRICING</a>
+            <a class="nav-link d-inline-block  me-4" href="#pricing">PRICING</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link d-inline-block  me-3" href="#">CONTACT</a>
+            <a class="nav-link d-inline-block  me-3" href="#contact">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -63,40 +69,270 @@
   <!-- end the header -->
 
   <!-- start the about -->
-  <div id="about" class="container-fluid mb-5">
+  <div id="about" class="container-fluid">
     <div class="row">
-      <div class="col-sm-8">
-        <h2>About Company Page</h2><br>
+      <div class="col-sm-8 me-5 ps-5 justify-content-center">
+        <h2 class="mt-5">About Company Page</h2><br>
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <br><button class="btn btn-default btn-lg">Get in Touch</button>
+        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <br><button class="btn btn-default btn-lg border border-1">Get in Touch</button>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3 ps-5">
         <img src="images/1.png" width="220" height="200" alt="">
       </div>
     </div>
   </div>
   
-  <div class="container-fluid bg-secondary bg-opacity-25 mt-5">
+  <div class="container-fluid bg-secondary bg-opacity-10 mt-5" id="about-value">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-4 " data-aos="fade-up">
         <img src="images/2.png" width="220" height="200" alt="">
       </div>
       <div class="col-sm-8">
         <h2>Our Values</h2><br>
         <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-        <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <p class="text-secondary"><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>
   </div>
   <!-- end the about -->
 
+  <!-- start the services -->
+  <div id="services" class="container-fluid text-center">
+    <h2>SERVICES</h2>
+    <h4>What we offer</h4>
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-4" data-aos="fade-up">
+        <i class="fa fa-solid fa-power-off"></i>
+        <h4>POWER</h4>
+        <p class="text-secondary">Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="col-sm-4" data-aos="fade-up">
+        <i class="fa fa-sharp fa-solid fa-heart"></i>
+        <h4>LOVE</h4>
+        <p class="text-secondary">Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="col-sm-4" data-aos="fade-up">
+        <i class="fa fa-sharp fa-solid fa-heart"></i>
+        <h4>JOB DONE</h4>
+        <p class="text-secondary">Lorem ipsum dolor sit amet..</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row slideanim">
+      <div class="col-sm-4" data-aos="fade-up">
+        <i class="fa fa-sharp fa-solid fa-heart"></i>
+        <h4>GREEN</h4>
+        <p class="text-secondary">Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="col-sm-4" data-aos="fade-up">
+        <i class="fa fa-sharp fa-solid fa-heart"></i>
+        <h4>CERTIFIED</h4>
+        <p class="text-secondary">Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="col-sm-4" data-aos="fade-up">
+        <i class="fa fa-sharp fa-solid fa-heart"></i>
+        <h4 style="color:#303030;">HARD WORK</h4>
+        <p class="text-secondary">Lorem ipsum dolor sit amet..</p>
+      </div>
+    </div>
+  </div>
+  <!-- end the services -->
 
+
+  <!-- start the portfolio -->
+  <div id="portfolio" class="container-fluid text-center bg-secondary bg-opacity-10">
+    <h2>Portfolio</h2><br>
+    <h4>What we have created</h4>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4 " data-aos="fade-up">
+        <div class="thumbnail bg-light pb-4">
+          <img src="images/paris.jpg" alt="Paris" width="100%" height="300">
+          <p class="text-secondary pt-2"><strong>Paris</strong></p>
+          <p class="text-secondary">Yes, we built Paris</p>
+        </div>
+      </div>
+      <div class="col-sm-4 " data-aos="fade-up">
+        <div class="thumbnail bg-light pb-4">
+          <img src="images/newyork.jpg" alt="New York" width="100%" height="300">
+          <p class="text-secondary pt-2"><strong>New York</strong></p>
+          <p class="text-secondary">We built New York</p>
+        </div>
+      </div>
+      <div class="col-sm-4" data-aos="fade-up">
+        <div class="thumbnail bg-light pb-4">
+          <img src="images/sanfran.jpg" alt="San Francisco" width="100%" height="300">
+          <p class="text-secondary pt-2"><strong>San Francisco</strong></p>
+          <p class="text-secondary ">Yes, San Fran is ours</p>
+        </div>
+      </div>
+    </div><br>
+
+    <h2 class="h2 mt-5 mb-5 pb-5">What our customers say</h2>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide " data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators btn-slide">
+      <button  type="button"  data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button  type="button"  data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button  type="button"  data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active mb-3">
+        <h4>"This company is the best. I am so happy with the result!" <br>
+          Michael Roe, Vice President, Comment Box</h4>
+      </div>
+      <div class="carousel-item mb-3">
+        <h4>"One word... WOW!!" <br>
+          John Doe, Salesman, Rep Inc</h4>
+      </div>
+      <div class="carousel-item mb-3">
+        <h4>"Could I... BE any more happy with this company?" <br>
+          Chandler Bing, Actor, FriendsAlot</h4>
+      </div>
+    </div>
+
+  <!-- Left and right controls/icons -->
+  <button  class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <i class="fa fa-solid fa-chevron-left"></i>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <i class="fa fa-solid fa-chevron-right"></i>
+  </button>
+</div>
+</div>
+  <!-- end the portfolio -->
+
+
+
+
+  <!-- start the pricing -->
+
+  <div id="pricing" class="container-fluid ">
+    <div class="text-center mb-5">
+      <h2 >Pricing</h2>
+      <h4>Choose a payment plan that works for you</h4>
+    </div>
+    <div class="row slideanim">
+      <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center" data-aos="fade-up">
+          <div class="panel-heading">
+            <h1>Basic</h1>
+          </div>
+          <div class="panel-body pt-4 text-secondary pb-2">
+            <p><strong>20</strong> Lorem</p>
+            <p><strong>15</strong> Ipsum</p>
+            <p><strong>5</strong> Dolor</p>
+            <p><strong>2</strong> Sit</p>
+            <p><strong>Endless</strong> Amet</p>
+          </div>
+          <hr>
+          <div class="panel-footer pt-2 text-secondary">
+            <h3>$19</h3>
+            <h4>per month</h4>
+            <button class="btn btn-lg">Sign Up</button>
+          </div>
+        </div>      
+      </div>     
+      <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center " data-aos="fade-up">
+          <div class="panel-heading">
+            <h1>Pro</h1>
+          </div>
+          <div class="panel-body pt-4 text-secondary pb-2">
+            <p><strong>50</strong> Lorem</p>
+            <p><strong>25</strong> Ipsum</p>
+            <p><strong>10</strong> Dolor</p>
+            <p><strong>5</strong> Sit</p>
+            <p><strong>Endless</strong> Amet</p>
+          </div>
+          <hr>
+          <div class="panel-footer pt-2 text-secondary">
+            <h3>$29</h3>
+            <h4>per month</h4>
+            <button class="btn btn-lg">Sign Up</button>
+          </div>
+        </div>      
+      </div>       
+      <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center" data-aos="fade-up">
+          <div class="panel-heading">
+            <h1>Premium</h1>
+          </div>
+          <div class="panel-body pt-4 text-secondary pb-2">
+            <p><strong>100</strong> Lorem</p>
+            <p><strong>50</strong> Ipsum</p>
+            <p><strong>25</strong> Dolor</p>
+            <p><strong>10</strong> Sit</p>
+            <p><strong>Endless</strong> Amet</p>
+          </div>
+          <hr>
+          <div class="panel-footer pt-2 text-secondary">
+            <h3>$49</h3>
+            <h4>per month</h4>
+            <button class="btn btn-lg">Sign Up</button>
+          </div>
+        </div>      
+      </div>    
+    </div>
+  </div>
+<!-- end the pricing -->
+
+<!-- start the contact -->
+<div id="contact" class="container-fluid bg-secondary bg-opacity-10 mt-5 pt-5 pb-5">
+  <h2 class="text-center pt-5 pb-4">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5 text-secondary">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim" data-aos="fade-up">
+      <div class="row">
+        <div class="col-sm-6 form-group mb-3">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group mb-3">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default submit" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<img src="images/map.jpg" data-aos="fade-up" class="w3-image w3-greyscale-min animate__animated animate__fadeInUp" style="width:100%">
+<!-- end the contact -->
+
+<!-- start the footer -->
+<footer class="container-fluid text-center" id="footer">
+  <a href="#header" title="To Top">
+    <i class="fa fa-solid fa-chevron-up"></i>
+  </a>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+<!-- end the footer -->
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <!-- package animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
 </body>
 
 </html>
